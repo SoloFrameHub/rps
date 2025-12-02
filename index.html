@@ -1,0 +1,831 @@
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/rps-logo.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MindSync | Modern Psychiatry &amp; Mental Wellness</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Do you offer telehealth appointments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we prioritize accessible mental healthcare through our secure, HIPAA-compliant digital clinic, allowing you to connect with our specialists from anywhere."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What conditions do you treat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We specialize in anxiety, depression, ADHD, and mood disorders, utilizing a blend of medication management and modern psychotherapy techniques."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How quickly can I be seen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our AI-assisted scheduling system helps reduce wait times. Most new patients can be seen within 48-72 hours of initial intake."
+        }
+      }]
+    }
+    </script>
+        <style>body { font-family: 'Plus Jakarta Sans', sans-serif; } .glass-panel { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.5); } .mesh-gradient { background-color: #f8fafc; background-image: radial-gradient(at 0% 0%, hsla(14, 85%, 65%, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(180, 70%, 50%, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(210, 80%, 20%, 0.05) 0px, transparent 50%); } @keyframes fadeIn { from {  opacity: 0;  transform: scale(1.02); }  to {  opacity: 1;  transform: scale(1); } } .animate-fade-in { animation: fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }</style>
+        <link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap">
+        <style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style>
+        <link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style>
+        <link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap">
+        <style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style>
+        <link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap">
+        <style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap">
+        <style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap">
+        <style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap">
+        <style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style>
+        <link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style>
+        <link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap">
+        <style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style>
+        <link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap">
+        <style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style>
+        <link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap">
+        <style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style>
+    </head>
+    <body class="mesh-gradient text-slate-800 antialiased selection:bg-rose-200 selection:text-rose-900">
+        <!-- Navigation -->
+        <header class="fixed top-0 w-full z-50 transition-all duration-300">
+            <div class="glass-panel border-b border-slate-200/50">
+                <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                    <a href="#" class="flex items-center gap-2 group"> <img src="images/rps-logo.png" width="86">  </a>
+                    <nav class="hidden md:flex items-center gap-8"><a href="#services" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Services</a><a href="#team" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Specialists</a><a href="#faq" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">FAQ</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900">Patient
+                        Portal</a>
+                        <a href="#" class="rounded-full bg-slate-900 text-white px-5 py-2.5 text-sm font-medium hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/20 hover:shadow-slate-900/30 flex items-center gap-2"> <span>Book Visit</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-4 h-4">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg> </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="pt-32 pb-20 overflow-hidden">
+            <!-- Hero Section (Updated) -->
+            <article class="max-w-7xl mx-auto px-6 mb-28">
+                <!-- Container for Image & Overlay -->
+                <div class="relative w-full rounded-[2.5rem] overflow-hidden bg-slate-900 shadow-2xl shadow-slate-200/50 aspect-[4/5] md:aspect-[21/9] group isolate">
+                    <!-- Hero Image (Group Photo) -->
+                    <!-- Note: Replace the src below with your actual uploaded image URL -->
+                    <img src="images/rps-team-2.webp" alt="Our Care Team" class="animate-fade-in transition-transform duration-[2000ms] group-hover:scale-105 w-full h-full object-cover absolute top-0 right-0 bottom-0 left-0">
+                    <!-- Dark Gradient Overlay for text readability -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent mix-blend-multiply">
+</div>
+                    <div class="absolute inset-0 bg-black/10"></div>
+                    <!-- Editorial Content Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-between items-center py-6 px-6 z-10">
+                        <div class="glass-panel px-4 py-1.5 rounded-full flex items-center gap-2 shadow-lg animate-[fadeIn_1.5s_ease-out]"><span class="relative flex h-2 w-2"> <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span> <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span> </span><span class="text-xs font-semibold uppercase tracking-wider text-slate-900">New Patients
+                            Welcome</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-white mb-10 max-w-5xl leading-[0.95] drop-shadow-lg">
+                            Care That Sees <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-white to-rose-200">The
+                                Whole You</span> </h1><a href=""><button class="h-16 px-10 rounded-full bg-white text-slate-900 text-lg font-medium hover:bg-slate-50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] flex items-center justify-center gap-3 group/btn">
+                                    5 Minute New Patient Intake
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-5 h-5 group-hover/btn:translate-x-1 transition-transform">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trust Indicators (Below Hero) -->
+            </article>
+            <!-- Google Reviews Widget -->
+            <section class="max-w-7xl mx-auto px-6 mb-32">
+                <div class="bg-white rounded-[2rem] border border-slate-200 p-8 md:p-12 shadow-xl shadow-slate-200/50 relative overflow-hidden">
+                    <!-- Background Decoration -->
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-50 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 opacity-50">
+</div>
+                    <div class="flex flex-col lg:flex-row gap-12 relative z-10">
+                        <!-- Summary Column -->
+                        <div class="lg:w-1/3 flex flex-col justify-center">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center border border-slate-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="w-6 h-6">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                    </svg>
+                                </div><span class="font-semibold text-slate-900 text-lg">Google Reviews</span>
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">Trusted by our
+                            community</h2>
+                            <div class="flex items-center gap-2 mb-6"><span class="text-2xl font-bold text-slate-900">4.9</span>
+                                <div class="flex gap-1 text-yellow-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                </div><span class="text-slate-500 text-sm font-medium">(Based on 32 reviews)</span>
+                            </div><a href="https://www.google.com/search?q=real+psychiatric+services+columbus+ohio&oq=real+psychiatric+services+&gs_lcrp=EgRlZGdlKgcIARAAGIAEMgoIABBFGBYYHhg5MgcIARAAGIAEMgcIAhAAGIAEMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMgYIBhBFGDwyBggHEEUYPDIGCAgQRRg80gEJMTE1ODlqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-xl font-medium hover:bg-slate-800 transition-colors w-fit group">
+                            Read all reviews <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
+                                    <path d="M15 3h6v6"/>
+                                    <path d="M10 14 21 3"/>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                </svg> </a>
+                        </div>
+                        <!-- Reviews Grid -->
+                        <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Review 1 -->
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                                <div class="flex gap-1 text-yellow-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                </div>
+                                <p class="text-slate-700 text-sm leading-relaxed mb-4">"David is extremely professional and
+                                thorough. He takes the time to really listen and understand. I felt heard and empowered
+                                in my treatment plan."</p>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-700 font-bold text-xs">
+                                        P
+</div><span class="text-xs font-semibold text-slate-900">Patient Review</span>
+                                </div>
+                            </div>
+                            <!-- Review 2 -->
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                                <div class="flex gap-1 text-yellow-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                </div>
+                                <p class="text-slate-700 text-sm leading-relaxed mb-4">"The telehealth appointments are so
+                                convenient. I can connect from home without the stress of a commute. Highly recommend
+                                for anyone seeking compassionate care."</p>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-rose-700 font-bold text-xs">
+                                        S
+</div><span class="text-xs font-semibold text-slate-900">Patient Review</span>
+                                </div>
+                            </div>
+                            <!-- Review 3 (Full Width on Mobile) -->
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 md:col-span-2">
+                                <div class="flex gap-1 text-yellow-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                </div>
+                                <p class="text-slate-700 text-sm leading-relaxed mb-4">"Finally found a practice that looks
+                                at the whole person, not just symptoms. The holistic approach here has made a huge
+                                difference in my mental wellness."</p>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold text-xs">
+                                        M
+</div><span class="text-xs font-semibold text-slate-900">Patient Review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Bento Grid Services -->
+            <section id="services" class="max-w-7xl mx-auto px-6 mb-32">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    <div class="max-w-xl">
+                        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mb-4">Holistic Care
+                        Ecosystem</h2>
+                        <p class="text-lg text-slate-600">Everything you need for mental clarity, organized in one seamless
+                        experience.</p>
+                    </div><a href="#" class="hidden md:flex items-center gap-2 text-rose-500 font-medium hover:gap-3 transition-all mt-6 md:mt-0">
+                    View all services <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-4 h-4">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg> </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(250px,auto)]">
+                    <!-- Card 1: Main Feature -->
+                    <article class="md:col-span-2 rounded-3xl bg-slate-900 p-8 md:p-12 text-white relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-rose-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-rose-500/30 transition-colors duration-500">
+</div>
+                        <div class="relative z-10 h-full flex flex-col justify-between">
+                            <div>
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center mb-6 backdrop-blur-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="video" class="lucide lucide-video w-6 h-6 text-rose-400">
+                                        <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5">
+</path>
+                                        <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-3">Telehealth First</h3>
+                                <p class="text-slate-300 text-lg max-w-md">Secure, high-definition video consultations that
+                                fit your schedule. No commute, no waiting rooms.</p>
+                            </div>
+                            <div class="mt-8 flex items-center gap-3"><span class="px-3 py-1 rounded-full bg-white/10 text-sm border border-white/10">HIPAA
+                                Compliant</span><span class="px-3 py-1 rounded-full bg-white/10 text-sm border border-white/10">Encrypted</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 2: Vertical -->
+                    <article class="rounded-3xl bg-white border border-slate-200 p-8 relative overflow-hidden group hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-teal-50/50 opacity-0 group-hover:opacity-100 transition-opacity">
+</div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center mb-6 text-teal-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pill" class="lucide lucide-pill w-6 h-6">
+                                    <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path>
+                                    <path d="m8.5 8.5 7 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 mb-2">Medication Management</h3>
+                            <p class="text-slate-600">Evidence-based pharmacotherapy tailored to your genetic profile.</p>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="rounded-3xl bg-white border border-slate-200 p-8 relative overflow-hidden group hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-rose-50/50 opacity-0 group-hover:opacity-100 transition-opacity">
+</div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center mb-6 text-rose-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="messages-square" class="lucide lucide-messages-square w-6 h-6">
+                                    <path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z">
+</path>
+                                    <path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1">
+</path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 mb-2">Psychotherapy</h3>
+                            <p class="text-slate-600">CBT, DBT, and talk therapy sessions integrated with your care plan. </p>
+                        </div>
+                    </article>
+                    <!-- Card 4: Wide -->
+                    <article class="md:col-span-2 rounded-3xl bg-gradient-to-br from-indigo-50 to-white border border-slate-200 p-8 flex flex-col md:flex-row items-center gap-8 group">
+                        <div class="flex-1">
+                            <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-6 h-6">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-slate-900 mb-3">Mental Health Education</h3>
+                            <p class="text-lg text-slate-600 mb-6">Evidence-based courses designed by our providers to help
+                            you optimize your wellbeing beyond the clinic.</p><a href="https://mental-wellness-education.realpsychiatricservices.com/" target="_blank" class="inline-flex items-center gap-2 text-indigo-600 font-medium hover:gap-3 transition-all">
+                            Explore the Platform <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4">
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg> </a>
+                        </div>
+                        <div class="w-full md:w-64 h-48 bg-white rounded-2xl shadow-lg border border-slate-100 p-4 relative top-4 group-hover:top-0 transition-all duration-500 overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5"></div>
+                            <!-- Course Card 1 -->
+                            <div class="bg-white rounded-xl border border-slate-100 p-3 shadow-sm mb-3 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="h-2 w-1/3 bg-indigo-100 rounded mb-2"></div>
+                                <div class="h-2 w-3/4 bg-slate-100 rounded"></div>
+                            </div>
+                            <!-- Course Card 2 -->
+                            <div class="bg-white rounded-xl border border-slate-100 p-3 shadow-sm mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                                <div class="h-2 w-1/3 bg-rose-100 rounded mb-2"></div>
+                                <div class="h-2 w-2/3 bg-slate-100 rounded"></div>
+                            </div>
+                            <!-- Course Card 3 -->
+                            <div class="bg-white rounded-xl border border-slate-100 p-3 shadow-sm transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 delay-150">
+                                <div class="h-2 w-1/3 bg-teal-100 rounded mb-2"></div>
+                                <div class="h-2 w-1/2 bg-slate-100 rounded"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Team / Coming Soon Section -->
+            <section id="team" class="max-w-7xl mx-auto px-6 mb-32">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mb-4">Meet Our Specialists </h2>
+                    <p class="text-lg text-slate-600">Dedicated professionals committed to your mental wellness.</p>
+                </div>
+                <!-- David Glenn Profile Card -->
+                <div class="max-w-5xl mx-auto bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden shadow-xl shadow-slate-200/50 flex flex-col md:flex-row mb-12">
+                    <!-- Image / Badge Side -->
+                    <div class="md:w-2/5 bg-slate-100 relative min-h-[400px] md:min-h-0 group overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-slate-100 to-teal-50 opacity-100 transition-opacity duration-500">
+</div>
+                        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#0f172a 1px, transparent 1px); background-size: 24px 24px;">
+</div>
+                        <div class="absolute inset-0 flex items-center justify-center text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-circle-2 opacity-50">
+                                <path d="M18 20a6 6 0 0 0-12 0"/>
+                                <circle cx="12" cy="10" r="4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
+                        <div class="absolute top-6 left-6 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg z-10">
+                            Practice Owner
+</div>
+                    </div>
+                    <!-- Content Side -->
+                    <div class="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="mb-6">
+                            <h3 class="text-3xl font-semibold text-slate-900 mb-2">David Glenn, PMHNP-BC</h3>
+                            <p class="text-rose-500 font-medium text-lg">Psychiatric Mental Health Nurse Practitioner</p>
+                        </div>
+                        <div class="prose prose-slate text-slate-600 mb-8 leading-relaxed">
+                            <p class="mb-4">
+                            From the moment you connect with David, you’ll sense his genuine warmth and easygoing
+                            nature. With 14 years in healthcare—from rushing to emergencies as an EMT to guiding
+                            patients as a psychiatric nurse—he brings a wealth of experience and a down-to-earth humor
+                            that instantly puts you at ease. </p>
+                            <p>
+                            Dave sees you as a whole person, not a collection of symptoms. He believes every aspect of
+                            your life—your stressors, relationships, lifestyle habits, and spiritual needs—shapes your
+                            mental health. His LGBTQ+-affirming approach creates a safe space where you can share your
+                            story without fear. </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                            <h4 class="font-semibold text-slate-900 mb-3 flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-teal-600">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                            Accepting New Patients </h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <p class="font-medium text-slate-700 mb-1">Availability:</p>
+                                    <p class="text-slate-600">Telehealth & In-Person</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-slate-700 mb-1">Specialties:</p>
+                                    <p class="text-slate-600 leading-relaxed">PTSD, Bipolar, ADHD, Depression, Anxiety,
+                                    LGBTQ+ Affirming Care.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Autumn Persinger Profile Card -->
+                <div class="max-w-5xl mx-auto bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden shadow-xl shadow-slate-200/50 flex flex-col md:flex-row mb-12">
+                    <!-- Image / Badge Side -->
+                    <div class="md:w-2/5 bg-slate-100 relative min-h-[400px] md:min-h-0 group overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-rose-50 via-slate-100 to-orange-50 opacity-100 transition-opacity duration-500">
+</div>
+                        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#0f172a 1px, transparent 1px); background-size: 24px 24px;">
+</div>
+                        <div class="absolute inset-0 flex items-center justify-center text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-circle-2 opacity-50">
+                                <path d="M18 20a6 6 0 0 0-12 0"/>
+                                <circle cx="12" cy="10" r="4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
+                        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-sm text-slate-900 px-4 py-2 rounded-full text-sm font-semibold shadow-sm z-10 border border-slate-200">
+                            Telehealth Specialist
+</div>
+                    </div>
+                    <!-- Content Side -->
+                    <div class="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="mb-6">
+                            <h3 class="text-3xl font-semibold text-slate-900 mb-2">Autumn Persinger, PMHNP-BC</h3>
+                            <p class="text-rose-500 font-medium text-lg">Psychiatric Mental Health Nurse Practitioner</p>
+                        </div>
+                        <div class="prose prose-slate text-slate-600 mb-8 leading-relaxed">
+                            <p class="mb-4">
+                            From your first conversation with Autumn, you’ll sense her genuine commitment to
+                            understanding your story. With a nursing background spanning critical care, emergency
+                            medicine, and detox units, she’s honed the ability to stay calm under pressure—and brings
+                            that steadiness straight into your sessions. </p>
+                            <p>
+                            Her specialized training as a sexual assault nurse examiner means she approaches trauma with
+                            the utmost sensitivity. Autumn is also deepening her expertise through a functional
+                            psychiatry program, exploring how nutritional imbalances and genetic variations can fuel
+                            symptoms. </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                            <h4 class="font-semibold text-slate-900 mb-3 flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-teal-600">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                            Accepting New Patients </h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <p class="font-medium text-slate-700 mb-1">Availability:</p>
+                                    <p class="text-slate-600">Telehealth (Adults 18+)</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-slate-700 mb-1">Specialties:</p>
+                                    <p class="text-slate-600 leading-relaxed">Trauma-Informed Care, Anxiety, Depression,
+                                    Mood Disorders.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Phillip Jaskot Profile Card -->
+                <div class="max-w-5xl mx-auto bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden shadow-xl shadow-slate-200/50 flex flex-col md:flex-row mb-12">
+                    <!-- Image / Badge Side -->
+                    <div class="md:w-2/5 bg-slate-100 relative min-h-[400px] md:min-h-0 group overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-teal-50 via-slate-100 to-blue-50 opacity-100 transition-opacity duration-500">
+</div>
+                        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#0f172a 1px, transparent 1px); background-size: 24px 24px;">
+</div>
+                        <div class="absolute inset-0 flex items-center justify-center text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-circle-2 opacity-50">
+                                <path d="M18 20a6 6 0 0 0-12 0"/>
+                                <circle cx="12" cy="10" r="4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
+                        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-sm text-slate-900 px-4 py-2 rounded-full text-sm font-semibold shadow-sm z-10 border border-slate-200">
+                            Accepting New Patients
+</div>
+                    </div>
+                    <!-- Content Side -->
+                    <div class="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="mb-6">
+                            <h3 class="text-3xl font-semibold text-slate-900 mb-2">Phillip Jaskot, PMHNP-BC</h3>
+                            <p class="text-rose-500 font-medium text-lg">Psychiatric Mental Health Nurse Practitioner</p>
+                        </div>
+                        <div class="prose prose-slate text-slate-600 mb-8 leading-relaxed">
+                            <p class="mb-4">
+                            From your initial meeting with Phillip, you’ll notice his steady confidence and genuine
+                            empathy. With over six years of experience as an ICU and Interventional Radiology nurse,
+                            Phillip is adept at navigating high-pressure situations—skills he now channels into calm,
+                            focused, and thoughtful mental health support. </p>
+                            <p>
+                            He blends clinical rigor with a warm, approachable style. While he values evidence-based
+                            medication management, Phillip prioritizes exploring non-medication strategies—such as
+                            mindfulness exercises or behavioral tools—whenever they align with your goals. </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                            <h4 class="font-semibold text-slate-900 mb-3 flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-teal-600">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                            Fast Availability </h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <p class="font-medium text-slate-700 mb-1">Availability:</p>
+                                    <p class="text-slate-600">Telehealth & In-Person (Adults 18+)</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-slate-700 mb-1">Specialties:</p>
+                                    <p class="text-slate-600 leading-relaxed">ADHD, Bipolar, PTSD, OCD, Insomnia, LGBTQ+
+                                    Affirming Care.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-5xl mx-auto bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden shadow-xl shadow-slate-200/50 flex flex-col md:flex-row">
+                    <!-- Image / Badge Side -->
+                    <div class="md:w-2/5 bg-slate-100 relative min-h-[400px] md:min-h-0 group overflow-hidden">
+                        <!-- Abstract Gradient Background -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-teal-50 via-slate-100 to-rose-50 opacity-100 transition-opacity duration-500">
+</div>
+                        <!-- Decorative Pattern -->
+                        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#0f172a 1px, transparent 1px); background-size: 24px 24px;">
+</div>
+                        <!-- Placeholder Icon (since no photo provided) -->
+                        <div class="absolute inset-0 flex items-center justify-center text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-circle-2 opacity-50">
+                                <path d="M18 20a6 6 0 0 0-12 0"/>
+                                <circle cx="12" cy="10" r="4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
+                        <!-- Badge -->
+                        <div class="absolute top-6 left-6 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg z-10">
+                            Coming February 2026
+</div>
+                    </div>
+                    <!-- Content Side -->
+                    <div class="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="mb-6">
+                            <h3 class="text-3xl font-semibold text-slate-900 mb-2">Kristin Circle, PMHNP-BC</h3>
+                            <p class="text-rose-500 font-medium text-lg">Psychiatric Mental Health Nurse Practitioner</p>
+                        </div>
+                        <div class="prose prose-slate text-slate-600 mb-8 leading-relaxed">
+                            <p class="mb-4">
+                            We are thrilled to announce that Kristin Circle will be joining Real Psychiatric Services in
+                            February 2026. </p>
+                            <p class="mb-4">
+                            Kristin is a Board Certified Psychiatric Mental Health Nurse Practitioner with a Master’s
+                            degree from Vanderbilt University and The Ohio State University. With a unique background
+                            that spans both psychiatry and neurology, plus prior experience in oncology, Kristin brings
+                            a truly holistic medical perspective to mental health. </p>
+                            <p>
+                            She has over 10 years of experience in community mental health settings and is dedicated to
+                            shared decision-making and patient empowerment. </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                            <h4 class="font-semibold text-slate-900 mb-3 flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-list text-teal-600">
+                                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1"/>
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                                    <path d="M12 11h4"/>
+                                    <path d="M12 16h4"/>
+                                    <path d="M8 11h.01"/>
+                                    <path d="M8 16h.01"/>
+                                </svg>
+                            Accepting Waitlist Inquiries </h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <p class="font-medium text-slate-700 mb-1">Patients:</p>
+                                    <ul class="list-disc list-inside text-slate-600 pl-1 space-y-1">
+                                        <li>Pediatric patients (Ages 6+)</li>
+                                        <li>Adults</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-slate-700 mb-1">Specialties:</p>
+                                    <p class="text-slate-600 leading-relaxed">Anxiety, Depression, PTSD, ADHD, and mood
+                                    disorders across the lifespan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- New Patient Fast-Track Section -->
+            <section class="max-w-7xl mx-auto px-6 mb-32">
+                <div class="bg-slate-900 rounded-[2.5rem] p-8 md:p-16 text-center relative overflow-hidden isolate">
+                    <!-- Background Effects -->
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-3xl bg-gradient-to-b from-teal-500/20 to-transparent opacity-30 blur-3xl -z-10">
+</div>
+                    <div class="max-w-3xl mx-auto mb-12">
+                        <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">Get Started in 5 Minutes
+                        or Less</h2>
+                        <p class="text-lg text-slate-300 leading-relaxed">No more paper stacks. Complete your full intake
+                        and sign documents instantly with our secure, HIPAA-compliant digital pass.</p>
+                    </div>
+                    <!-- Process Flow -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 relative">
+                        <!-- Connector Line (Desktop) -->
+                        <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-slate-700 via-teal-500/50 to-slate-700 z-0">
+</div>
+                        <!-- Step 1 -->
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-24 h-24 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-6 shadow-xl shadow-black/20 group hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-teal-400">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">1. Click the Link</h3>
+                            <p class="text-slate-400 text-sm">Instant access to our secure portal</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-24 h-24 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-6 shadow-xl shadow-black/20 group hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-teal-400">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">2. Fill & Sign</h3>
+                            <p class="text-slate-400 text-sm">Avg time: 5 mins • Fully Digital</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-24 h-24 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-6 shadow-xl shadow-black/20 group hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-teal-400">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">3. We Review & Schedule</h3>
+                            <p class="text-slate-400 text-sm">Fast approval & appointment booking</p>
+                        </div>
+                    </div>
+                    <!-- CTA -->
+                    <div class="flex flex-col items-center gap-4"><a href="https://forms.realpsychiatricservices.com/realpsychiatricservices/form/AppointmentRequest2/formperma/tTLYXtQWxGMK0H6_Wnql6yo3mjYO4lAz0ZdrbDMC9iQ?_gl=1*esvhoa*_gcl_au*MTkwMTc5NDgzNS4xNzY0NjgwMjAz*_ga*MzAyNzMzMS4xNzY0NjgwMjAz*_ga_3PC3PW9HNK*czE3NjQ2OTE2ODMkbzQkZzAkdDE3NjQ2OTE2ODMkajYwJGwwJGgw*_ga_JM3S9VDEKS*czE3NjQ2OTE2ODMkbzQkZzAkdDE3NjQ2OTE2ODMkajYwJGwwJGgw" target="_blank" class="h-16 px-10 rounded-full bg-teal-500 text-white text-lg font-bold hover:bg-teal-400 transition-all duration-300 hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] flex items-center justify-center gap-3 group">
+                        Start New Patient Intake Now <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-1 transition-transform">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg> </a>
+                        <div class="flex items-center gap-2 text-slate-400 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg><span>100% Secure & HIPAA Compliant via Zoho Forms</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FAQ Section (AEO Optimized) -->
+            <section id="faq" class="max-w-4xl mx-auto px-6 mb-32">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mb-4">Common Questions</h2>
+                    <p class="text-lg text-slate-600">Clear answers for your mental health journey.</p>
+                </div>
+                <div class="space-y-4">
+                    <details class="group bg-white rounded-2xl border border-slate-200 open:ring-2 open:ring-slate-900/5 transition-all">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none"><span class="text-lg font-medium text-slate-900">Do you offer telehealth appointments?</span><span class="transform group-open:rotate-180 transition-transform duration-300"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-5 h-5 text-slate-400">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg> </span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 text-lg leading-relaxed">
+                            Yes, we prioritize accessible mental healthcare through our secure, HIPAA-compliant digital
+                            clinic, allowing you to connect with our specialists from the comfort of your home.
+</div>
+                    </details>
+                    <details class="group bg-white rounded-2xl border border-slate-200 open:ring-2 open:ring-slate-900/5 transition-all">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none"><span class="text-lg font-medium text-slate-900">What conditions do you treat?</span><span class="transform group-open:rotate-180 transition-transform duration-300"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-5 h-5 text-slate-400">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg> </span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 text-lg leading-relaxed">
+                            We specialize in a wide range of conditions including anxiety, depression, ADHD, bipolar
+                            disorder, and PTSD. Our approach combines medication management with supportive therapy.
+</div>
+                    </details>
+                    <details class="group bg-white rounded-2xl border border-slate-200 open:ring-2 open:ring-slate-900/5 transition-all">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none"><span class="text-lg font-medium text-slate-900">How quickly can I be seen?</span><span class="transform group-open:rotate-180 transition-transform duration-300"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-5 h-5 text-slate-400">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg> </span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 text-lg leading-relaxed">
+                            Our AI-assisted scheduling system helps optimize practitioner availability. Most new patients
+                            can be seen within 48-72 hours of their initial intake submission.
+</div>
+                    </details>
+                    <details class="group bg-white rounded-2xl border border-slate-200 open:ring-2 open:ring-slate-900/5 transition-all">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none"><span class="text-lg font-medium text-slate-900">Do you accept insurance?</span><span class="transform group-open:rotate-180 transition-transform duration-300"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-5 h-5 text-slate-400">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg> </span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 text-lg leading-relaxed">
+                            We are in-network with most major providers including Blue Cross, Aetna, and Cigna. We also
+                            offer transparent self-pay rates for those out-of-network.
+</div>
+                    </details>
+                </div>
+            </section>
+            <!-- CTA Aside -->
+            <aside class="max-w-7xl mx-auto px-6">
+                <div class="rounded-[2.5rem] bg-slate-900 overflow-hidden relative isolate">
+                    <div class="absolute inset-0 -z-10">
+                        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-b from-rose-500/20 to-teal-500/20 blur-[100px] rounded-full translate-x-1/3 -translate-y-1/4">
+</div>
+                    </div>
+                    <div class="px-6 py-24 md:px-24 md:py-32 text-center">
+                        <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-white mb-8">Ready to reclaim your
+                        mind?</h2>
+                        <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">Join the hundreds of patients who have
+                        found clarity and balance through our modern approach to psychiatry.</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="#" class="h-14 px-8 rounded-full bg-white text-slate-900 font-medium hover:bg-slate-50 transition-colors flex items-center justify-center gap-2">
+                            Book Appointment </a><a href="#" class="h-14 px-8 rounded-full bg-slate-800 text-white border border-slate-700 font-medium hover:bg-slate-700 transition-colors flex items-center justify-center gap-2">
+                            Verify Insurance </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-white border-t border-slate-200 pt-16 pb-8">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+                    <div class="col-span-2 md:col-span-1">
+                        <div class="flex items-center gap-2 mb-6">
+                            <img src="images/rps-logo.png" alt="MindSync" class="w-8 h-8 rounded-lg"><span class="text-lg font-semibold tracking-tight text-slate-900">MindSync</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-6">Psychiatry reimagined for the digital age. Compassionate
+                        care, powered by technology.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-900 mb-4">Practice</h4>
+                        <ul class="space-y-3 text-sm text-slate-500">
+                            <li>
+                                <a href="#" class="hover:text-rose-500 transition-colors">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-rose-500 transition-colors">Treatments</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-rose-500 transition-colors">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-rose-500 transition-colors">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-900 mb-4">Resources</h4>
+                        <ul class="space-y-3 text-sm text-slate-500">
+                            <li>
+                                <a href="#" class="hover:text-rose-500 transition-colors">Patient Portal</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-rose-500 transition-colors">Emergency Help</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-rose-500 transition-colors">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-rose-500 transition-colors">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h4 class="font-semibold text-slate-900 mb-4">Contact</h4>
+                        <ul class="space-y-3 text-sm text-slate-500">
+                            <li class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail w-4 h-4">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                </svg>                                 hello@mindsync.com
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone w-4 h-4">
+                                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+</path>
+                                </svg>                                 (555) 123-4567
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin w-4 h-4">
+                                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>                                 100 Innovation Dr.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+                    <p>© 2024 MindSync Psychiatry PLLC. All rights reserved.</p>
+                    <div class="flex gap-6"><a href="#" class="hover:text-slate-600">Privacy Policy</a><a href="#" class="hover:text-slate-600">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+        lucide.createIcons();
+    </script>
+    </body>
+</html>
